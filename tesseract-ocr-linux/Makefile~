@@ -1,0 +1,15 @@
+CXX=g++
+LDLIBS=-ltesseract -llept 
+TARGET=find_text                         \
+	   GetComponentImagesExample            \
+	   ResultIteratorExample                \
+	   OrientationAndScriptDetectionExample \
+	   IteratorExample
+
+RM=rm -f
+
+all:$(TARGET)
+
+clean: 
+	$(RM) $(TARGET)
+
